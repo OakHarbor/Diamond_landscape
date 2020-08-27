@@ -1188,6 +1188,7 @@ form p{
     #home-h {
         font-size: 3em;
         max-width: 500px;
+        background-attachment: fixed;
     }
 
     #home-p {
@@ -1446,6 +1447,7 @@ form p{
     #experience {
         padding-top: 70px !important;
         padding-bottom: 70px !important;
+        background-attachment: fixed;
     }
 
     .experience-group {
@@ -1569,6 +1571,10 @@ form p{
     /*-- -------------------------- -->
     <---            Hero            -->
     <--- -------------------------- -*/
+
+    #hero {
+        background-attachment: fixed;
+    }
 
     #home-h {
         font-size: 3em;
@@ -1830,6 +1836,7 @@ form p{
     #experience {
         padding-top: 70px !important;
         padding-bottom: 70px !important;
+        background-attachment: fixed;
     }
 
     .experience-group {
@@ -1952,6 +1959,10 @@ form p{
     /*-- -------------------------- -->
     <---            Hero            -->
     <--- -------------------------- -*/
+
+    #hero {
+        background-attachment: fixed;
+    }
 
     #home-h {
         font-size: 3em;
@@ -2213,6 +2224,7 @@ form p{
     #experience {
         padding-top: 70px !important;
         padding-bottom: 70px !important;
+        background-attachment: fixed;
     }
 
     .experience-group {
