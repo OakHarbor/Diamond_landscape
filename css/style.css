@@ -491,6 +491,7 @@ form p{
 #contact textarea {
     width:100%;
     border: none;
+    border: 1px solid transparent;
     border-bottom: 1px solid #CCC;
     background:transparent;
     margin:0 0 15px;
