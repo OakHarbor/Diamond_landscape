@@ -1,0 +1,263 @@
+/* Dark Mode Toggle */
+
+:root {
+    --dark: #000;
+    --medium: #1b1b1b;
+    --light: #2e2e2e;
+}
+
+.dark-mode-group {
+    position: absolute;
+    top: -340px;
+    right: 15px;
+    width: 80px;
+    height: 470px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.dark-mode-group p {
+    font-size: .7em !important;
+    text-align: center;
+    color: #fff;
+}
+
+.dark-toggle {
+    margin: 0;
+    width: 30px;
+    height: 16px;
+    z-index: 20;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1000;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    align-items: center;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.dark-toggle span {
+    height: 20px;
+    width: 20px;
+    left: -8px;
+    margin: 0;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+ 
+.top-dark-mode-button {
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    z-index: 1000;
+    -webkit-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+    transition: .3s ease-in;
+}
+
+.top-dark-mode-button:after {
+    content: 'DARK';
+    position: absolute;
+    color: #000;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 22px;
+    top: 10px;
+    -webkit-transition: .1s ease-in;
+    -o-transition: .1s ease-in;
+    transition: .1s ease-in;
+}
+
+.top-dark-mode-button.dark-mode:after {
+    content: 'LIGHT';
+    color: #fff;
+    top: 12px;
+}
+
+.top-dark-mode-button .dark-toggle {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+    -webkit-box-shadow: 0px 15px 5px -8px rgba(0,132,53,.5);
+            box-shadow: 0px 15px 5px -8px rgba(0,132,53,.5);
+    width: 35px;
+}
+
+.dark-mode-button {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.dark-toggle.dark-mode {
+    background: rgb(0,132,53);
+    background: -o-linear-gradient(left, rgba(0,132,53,1) 0%, rgba(0,221,246,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,132,53,1)), to(rgba(0,221,246,1)));
+    background: linear-gradient(90deg, rgba(0,132,53,1) 0%, rgba(0,221,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+    border: none;
+}
+
+.dark-toggle span.dark-mode {
+    left: 15px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+/* Navigation */
+.navbar-menu.dark-mode {
+    background: #222;	
+	background: -o-linear-gradient(#222, #000);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
+	background: linear-gradient(#222, #000);	
+    height: 120%;
+}
+
+.side-nav a.dark-mode {
+    color: #fff;
+}
+
+.hamburger-inner.dark-mode, .hamburger-inner.dark-mode::before, .hamburger-inner.dark-mode::after {
+    background: #fff;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.hamburger.is-active .hamburger-inner.dark-mode::after,
+.hamburger.is-active .hamburger-inner.dark-mode::before {
+    background: #fff;
+}
+
+/* Body and Core Elements */
+body.dark-mode {
+    background: var(--dark);
+}
+
+h2.dark-mode, p.dark-mode {
+    color: #fff !important;
+}
+
+p.dark-mode {
+    opacity: .9;
+}
+
+h3.dark-mode {
+    color: var(--primary);
+}
+
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+.clippy.dark-mode {
+    background: #000
+}
+
+.icon-graphic-middle.dark-mode {
+    border: 2px solid #000;
+}
+
+/*-- -------------------------- -->
+<---        NEXT SECTION        -->
+<--- -------------------------- -*/
+
+
+
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+
+    
+
+}
+
+@media screen and (min-width: 992px) {
+
+    header {
+        max-width: 1100px;
+        position: relative;
+        margin: auto;
+    }
+
+    .navbar-menu.dark-mode {
+        height: 100px;
+    }
+
+    .navbar-menu.dark-mode {
+        overflow: visible;
+    }
+    
+    .top-dark-mode-button {
+        position: absolute;
+        right: 0px;
+        left: unset;
+        top: 55px;
+        -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        z-index: 5000;
+    }
+
+    .navbar-menu.dark-mode {
+        background: unset;
+    }
+
+    .navbar-menu.dark-mode {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+}
