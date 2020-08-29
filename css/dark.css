@@ -167,6 +167,10 @@
     height: 120%;
 }
 
+.mobile-nav.dark-mode {
+    background: #000;
+}
+
 .side-nav a.dark-mode {
     color: #fff;
 }
@@ -213,10 +217,36 @@ h3.dark-mode {
 }
 
 /*-- -------------------------- -->
-<---        NEXT SECTION        -->
+<---           About            -->
 <--- -------------------------- -*/
 
+.top-card.dark-mode {
+    background: var(--medium);
+}
 
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+#services.dark-mode {
+    background: var(--dark);
+}
+
+.svg-circle.dark-mode {
+    background: var(--medium);
+}
+
+/*-- -------------------------- -->
+<---           Review           -->
+<--- -------------------------- -*/
+
+.reviewer-info h4.dark-mode {
+    color: #fff;
+}
+
+#quote.dark-mode:before {
+    background: var(--medium);
+}
 
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1025px) {
