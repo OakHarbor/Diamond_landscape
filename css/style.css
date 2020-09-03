@@ -1514,17 +1514,19 @@ form p{
     <--- -------------------------- -*/
 
     #get-started {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        background: url("/images/get-left-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-
-    #get-started {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
     }
 
     .get-left {
@@ -1903,17 +1905,19 @@ form p{
     <--- -------------------------- -*/
 
     #get-started {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        background: url("/images/get-left-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-
-    #get-started {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
     }
 
     .get-left {
@@ -2291,17 +2295,19 @@ form p{
     <--- -------------------------- -*/
 
     #get-started {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-    }
-
-    #get-started {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+        background: url("/images/get-left-mobile.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     .get-left {
