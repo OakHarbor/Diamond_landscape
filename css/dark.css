@@ -167,6 +167,18 @@
     height: 120%;
 }
 
+.dark {
+    display: none;
+}
+
+.dark.dark-mode {
+    display: block;
+}
+
+.light.dark-mode {
+    display: none;
+}
+
 .mobile-nav.dark-mode {
     background: #000;
 }
@@ -282,6 +294,10 @@ h3.dark-mode {
         z-index: 5000;
     }
 
+    .top-dark-mode-button:after {
+        color: #fff;
+    }
+
     .navbar-menu.dark-mode {
         background: unset;
     }
@@ -289,5 +305,6 @@ h3.dark-mode {
     .navbar-menu.dark-mode {
         -webkit-box-shadow: none;
                 box-shadow: none;
+        background-color: #000;
     }
 }

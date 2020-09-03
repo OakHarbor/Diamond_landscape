@@ -252,6 +252,8 @@ var $sideNavA = $(".side-nav a");
 var $isActiveHamburger = $(".hamburger.is-active .hamburger-inner::after");
 var $hamburgerInner = $(".hamburger-inner");
 var $mobileNav = $(".mobile-nav");
+var $light = $(".light");
+var $dark = $(".dark");
 
 /* Body and Core Elements */
 var $body = $("body");
@@ -321,6 +323,8 @@ const enableDarkMode = () => {
   $isActiveHamburger.addClass("dark-mode");
   $hamburgerInner.addClass("dark-mode");
   $mobileNav.addClass("dark-mode");
+  $light.addClass("dark-mode");
+  $dark.addClass("dark-mode");
 
   // Landing
   $clippy.addClass("dark-mode");
@@ -376,6 +380,8 @@ const disableDarkMode = () => {
   $isActiveHamburger.removeClass("dark-mode");
   $hamburgerInner.removeClass("dark-mode");
   $mobileNav.removeClass("dark-mode");
+  $light.removeClass("dark-mode");
+  $dark.removeClass("dark-mode");
 
   // Landing
   $clippy.removeClass("dark-mode");
