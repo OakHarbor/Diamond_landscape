@@ -2,6 +2,14 @@ h3 {
     font-size: 22px;
 }
 
+.mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
 /*-- -------------------------- -->
 <---          Landing           -->
 <--- -------------------------- -*/
@@ -1182,6 +1190,14 @@ form p{
         padding-bottom: 100px !important;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
     /*-- -------------------------- -->
     <---            Hero            -->
     <--- -------------------------- -*/
@@ -1569,6 +1585,14 @@ form p{
     .section {
         padding-top: 100px !important;
         padding-bottom: 100px !important;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 
     /*-- -------------------------- -->
@@ -1959,6 +1983,14 @@ form p{
     .section {
         padding-top: 100px !important;
         padding-bottom: 100px !important;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
     }
 
     /*-- -------------------------- -->
