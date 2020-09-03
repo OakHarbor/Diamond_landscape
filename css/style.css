@@ -3,12 +3,12 @@ h3 {
 }
 
 .mobile {
-        display: block;
-    }
+    display: block;
+}
 
-    .desktop {
-        display: none;
-    }
+.desktop {
+    display: none;
+}
 
 /*-- -------------------------- -->
 <---          Landing           -->

@@ -2,6 +2,14 @@
 <---         CORE STYLES        -->
 <--- -------------------------- -*/
 
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 .skip {
     position: absolute;
     opacity: 0;
@@ -740,12 +748,27 @@ footer a svg {
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1024px) {
 
+	.mobile {
+    	display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
 
 
 }
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
+
+	.mobile {
+    	display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
 
 	footer {
 		padding-top: 100px;
