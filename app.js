@@ -276,6 +276,7 @@ var $topCard = $(".top-card");
 // Services 
 var $services = $("#services");
 var $svgCircle = $(".svg-circle");
+var $exph3 = $("#experience h4")
 
 // Review 
 var $reviewerInfo = $(".reviewer-info h4");
@@ -335,6 +336,7 @@ const enableDarkMode = () => {
   // Services
   $services.addClass("dark-mode");
   $svgCircle.addClass("dark-mode");
+  $exph3.addClass("dark-mode");
 
   // Reviewer
   $reviewerInfo.addClass("dark-mode");
@@ -392,6 +394,7 @@ const disableDarkMode = () => {
   // Services
   $services.removeClass("dark-mode");
   $svgCircle.removeClass("dark-mode");
+  $exph3.removeClass("dark-mode");
 
   // Reviewer
   $reviewerInfo.removeClass("dark-mode");

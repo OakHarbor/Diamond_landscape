@@ -252,6 +252,10 @@ h3.dark-mode {
 <---           Review           -->
 <--- -------------------------- -*/
 
+#experience h3.dark-mode {
+    color: #fff !important;
+}
+
 .reviewer-info h4.dark-mode {
     color: #fff;
 }
