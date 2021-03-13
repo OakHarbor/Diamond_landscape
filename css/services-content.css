@@ -1,0 +1,277 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+#hero {
+    height: 250px;
+    background: url("/images/image-7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabinets {
+    background: url("/images/cabinet-painting-11.JPG") !important;
+    background-position: top;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+#dark {
+    z-index: 0;
+}
+
+.about-box {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    -webkit-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+            transform: translateY(60px);
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+    
+}
+
+#home-h {
+    padding: 0 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 30px;
+}
+
+/*-- -------------------------- -->
+<---          CONTENT           -->
+<--- -------------------------- -*/
+
+#content .image-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#content .image-group img {
+    width: 46%;
+    display: inline-block;
+    box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+}
+
+#content h2 {
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    padding-left: 20px;
+    border-left: 5px solid var(--primary);
+}
+
+.last {
+    margin-bottom: 50px;
+}
+
+.content-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--primary);
+    padding-left: 20px;
+}
+
+ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+h4 {
+    position: relative;
+    padding-left: 20px;
+}
+
+.faq {
+    padding-left: 20px;
+}
+
+h4:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 0px;
+    height: 10px;
+    width: 10px;
+    background: var(--primary);
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.content-container p span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.content-container a {
+    color: var(--primary);
+}
+
+#content img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Tablets */
+@media screen and (min-width: 750px) and (max-width: 1025px) {
+
+    .mobile-nav {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 730px;
+    }
+
+    .mobile-menu {
+        max-width: 100% !important;
+    }
+
+    .content-image-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-image-group img {
+        width: 48% !important;
+    }
+
+    /*-- -------------------------- -->
+    <---           HERO             -->
+    /*--- -------------------------- -*/
+
+    #hero {
+        height: 300px;
+    }
+
+    .about-box {
+        width: 600px;
+        height: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transform: translateY(140px);
+            -ms-transform: translateY(140px);
+                transform: translateY(140px);
+    }
+
+    .heroText h2 {
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        padding: 30px 0;
+        width: 540px;
+        position: relative;
+        font-weight: normal;
+        margin: auto;
+    }
+
+    .about-box h1 {
+        font-size: 3.125em;
+    }
+
+}
+
+/* Desktop */
+@media screen and  (min-width: 1026px) {
+
+    /*-- -------------------------- -->
+    <---           HERO             -->
+    /*--- -------------------------- -*/
+
+    #hero {
+        height: 500px;
+        background: url("/images/image-15.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+
+    .content-image-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-image-group img {
+        width: 48% !important;
+    }
+
+    .about-box {
+        width: 700px;
+        height: 200px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-transform: translateY(250px);
+            -ms-transform: translateY(250px);
+                transform: translateY(250px);
+    }
+
+    .about-box h1 {
+        font-size: 3.75em;
+        text-align: center;
+    }
+
+    #content .container {
+        max-width: 800px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .split {
+        column-count: 2;
+    }
+
+    .content-container {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+    }
+
+    .highlight {
+        display: none;
+    }
+
+    .image-background {
+        background: url("../images/painted-cabinet.JPG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        margin: 50px 0;
+    }
+}

@@ -255,6 +255,77 @@ h3 {
 }
 
 /*-- -------------------------- -->
+<---      Services Content      -->
+<--- -------------------------- -*/
+
+#serivces-content .section {
+    padding-bottom: 0 !important;
+}
+
+#services-content h3 {
+    font-size: 30px;
+    margin-top: 50px;
+    padding-left: 20px;
+    border-left: 5px solid var(--primary);
+}
+
+.green {
+    font-weight: bold;
+}
+
+#services-content h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#services-content h4:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 9px;
+    left: 0px;
+    height: 10px;
+    width: 10px;
+    background: var(--primary);
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+#services-content .break {
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+#services-content button {
+    display: block;
+    margin: auto;
+}
+
+.content-item {
+    margin-bottom: 70px;
+}
+
+.content-item img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 20px solid #fff;
+    box-shadow: 0px 4px 29px 3px rgb(0 0 0 / 10%);
+}
+
+.content-item h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    border-left: 5px solid var(--primary);
+}
+
+
+
+/*-- -------------------------- -->
 <---          Portfolio         -->
 <--- -------------------------- -*/
 
@@ -837,6 +908,45 @@ form p{
 
 }
 
+@media screen and (min-width: 768px) {
+
+    #services-content {
+        padding-bottom: 0 !important;
+    }
+
+    #services-content .content-wrapper {
+        width: 600px;
+    }
+
+    #services-content .content-wrapper h2 {
+        width: 400px;
+    }
+
+    .content-item img {
+        width: 400px;
+    }
+
+    .additional .content-item h2 {
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+
+    .section-line {
+        width: 200px;
+        height: 2px;
+        background: var(--primary);
+        margin: 15px auto;
+    }
+
+    .content-item h2, .content-item p {
+        text-align: center;
+        width: 600px;
+        margin: auto;
+        border: none;
+    }
+
+}
+
 /* Step 2 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -1007,7 +1117,7 @@ form p{
     <--- -------------------------- -*/
 
     #gallery h2 {
-        font-size: 36px;
+        font-size: 56px;
     }
 
     .gallery-topper {
@@ -1178,11 +1288,62 @@ form p{
 
 }
 
+@media screen and (min-width: 1024px) {
+
+    #services-content .content-wrapper h2 {
+        font-size: 45px;
+        width: 500px;
+    }
+
+    #services-content .container {
+        width: 900px;
+    }
+
+    .content-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .content-item .wrapper {
+        width: 550px;
+    }
+
+    .content-item img {
+        width: 300px;
+        margin: auto;
+    }
+
+    .additional .container {
+        width: 100% !important;
+    }
+
+    .content-item h2 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .section-line {
+        margin-left: 0;
+    }
+
+    .content-item p {
+        text-align: left;
+        width: auto;
+    }
+}
+
 /* Step 3 */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
     .container {
+        width: 100%;
         max-width: 1100px;
+        padding: 0 20px;
     }
 
     .section {
@@ -1313,9 +1474,8 @@ form p{
         position: absolute;
         width: auto;
         height: 350px;
-
+        border: 20px solid #fff;
         -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
-
                 box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
     }
 
@@ -1402,7 +1562,7 @@ form p{
     }
 
     .why-us-left {
-        width: 420px;
+        width: 360px;
         -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
                 box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
     }
@@ -1713,13 +1873,14 @@ form p{
         position: absolute;
         width: auto;
         height: 350px;
+        border: 20px solid #fff;
         -webkit-box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
                 box-shadow: 0px 4px 29px 3px rgba(0, 0, 0, 0.1);
     }
 
     .image-group img:first-child {
         right: 0;
-        top: -70px;
+        top: -10px;
     }
 
     .image-group img:last-child {
